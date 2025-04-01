@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import NotFound from './view/NotFound.vue';
-import HomeView from './view/HomeView.vue';
+import NotFoundView from './views/NotFoundView.vue';
+import HomeView from './views/HomeView.vue';
+import MathView from './views/MathView.vue';
+import IpAddressView from './views/IpAddressView.vue';
 
 const routes = [
   {
@@ -8,10 +10,20 @@ const routes = [
     name: 'Home',
     component: HomeView,
   },
+  {
+    path: `/xy`,
+    name: 'Math',
+    component: MathView,
+  },
+  {
+    path: `/ip`,
+    name: 'IpAddress',
+    component: IpAddressView,
+  },
   // Wildcard route for 404 page
   {
     path: '/:pathMatch(.*)*',
-    component: NotFound,
+    component: NotFoundView,
   },
 ];
 
