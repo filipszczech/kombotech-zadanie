@@ -1,1 +1,8 @@
-{}
+{
+    "title": "Zadanie rekrutacyjne",
+    "nav": {
+        "home": "Strona główna",
+        "calculator": "Kalkulator",
+        "check_ip": "Sprawdź IP"
+    }
+}

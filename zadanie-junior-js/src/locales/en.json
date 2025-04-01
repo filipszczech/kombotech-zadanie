@@ -1,1 +1,8 @@
-{}
+{
+    "title": "Recruitment task",
+    "nav": {
+        "home": "Home",
+        "calculator": "Calculator",
+        "check_ip": "Check IP"
+    }
+}
