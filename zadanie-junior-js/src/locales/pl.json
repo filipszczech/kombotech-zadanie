@@ -4,5 +4,17 @@
         "home": "Strona główna",
         "calculator": "Kalkulator",
         "check_ip": "Sprawdź IP"
+    },
+    "math": {
+        "title": "Obliczenia matematyczne",
+        "varX": "Zmienna X",
+        "varY": "Zmienna Y",
+        "result": "Wyniki obliczeń:",
+        "results": {
+            "addition": "Wynik dodawania",
+            "subtraction": "Wynik odejmowania",
+            "multiplication": "Wynik mnożenia",
+            "division": "Wynik dzielenia"
+        }
     }
 }

@@ -4,5 +4,17 @@
         "home": "Home",
         "calculator": "Calculator",
         "check_ip": "Check IP"
+    },
+    "math": {
+        "title": "Mathematical calculations",
+        "varX": "Variable X",
+        "varY": "Variable Y",
+        "result": "Calculation results:",
+        "results": {
+            "addition": "Addition Result",
+            "subtraction": "Subtraction Result",
+            "multiplication": "Multiplication Result",
+            "division": "Division Result"
+        }
     }
 }
