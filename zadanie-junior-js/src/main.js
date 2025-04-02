@@ -12,7 +12,11 @@ import { createI18n } from "vue-i18n";
 
 const app = createApp(App)
 
-const vuetify = createVuetify()
+const vuetify = createVuetify({
+  theme: {
+    defaultTheme: 'dark'
+  }
+})
 
 const messages = {
   en: await import("./locales/en.json"),

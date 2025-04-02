@@ -10,6 +10,10 @@
                 <button @click="toggleLanguage" class="">
                     {{ locale === "pl" ? "EN" : "PL" }}
                 </button>
+                <button @click="toggleTheme" class="ml-3">
+                    <v-icon v-if="theme.global.name.value === 'light'">mdi-moon-waning-crescent</v-icon>
+                    <v-icon v-else>mdi-white-balance-sunny</v-icon>
+                </button>
             </v-container>
         </v-app-bar>
         <v-navigation-drawer v-model="drawer" temporary>
@@ -29,14 +33,28 @@
 </template>
   
 <script setup>
-    import { ref } from "vue";
+    import { ref, watch, onMounted } from "vue";
     import { useI18n } from "vue-i18n";
+    import { useTheme } from "vuetify";
     
     const { locale, t } = useI18n();
+    const theme = useTheme();
     const drawer = ref(false);
     
     const toggleLanguage = () => {
         locale.value = locale.value === "pl" ? "en" : "pl";
     };
+    
+    const toggleTheme = () => {
+        theme.global.name.value = theme.global.name.value === "light" ? "dark" : "light";
+    };
+
+    onMounted(() => {
+        locale.value = localStorage.getItem("locale") || "pl";
+        theme.global.name.value = localStorage.getItem("theme") || "light";
+    });
+    watch(locale, (newVal) => localStorage.setItem("locale", newVal));
+    watch(() => theme.global.name.value, (newVal) => localStorage.setItem("theme", newVal));
+
 </script>
   

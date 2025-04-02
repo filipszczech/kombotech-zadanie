@@ -16,5 +16,11 @@
             "multiplication": "Multiplication Result",
             "division": "Division Result"
         }
+    },
+    "ip": {
+        "title": "IP Address Check",
+        "try_again": "Try again",
+        "address": "Address",
+        "refresh": "Refresh"
     }
 }

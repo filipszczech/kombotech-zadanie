@@ -16,5 +16,11 @@
             "multiplication": "Wynik mnożenia",
             "division": "Wynik dzielenia"
         }
+    },
+    "ip": {
+        "title": "Sprawdzanie adresu IP",
+        "try_again": "Spróbuj ponownie",
+        "address": "Adres",
+        "refresh": "Odśwież"
     }
 }
