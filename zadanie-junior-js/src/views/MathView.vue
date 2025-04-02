@@ -55,8 +55,12 @@
     import { ref } from 'vue';
     import { computed } from 'vue';
     import { useI18n } from "vue-i18n";
+    import { useTitle } from '@vueuse/core';
     
     const { t } = useI18n();
+    const title = useTitle();
+    title.value = `Rekrutacja | ${t("nav.calculator")}`;
+
     const number1 = ref(0);
     const number2 = ref(0);
 
@@ -74,7 +78,7 @@
             addition: formatNumber(num1 + num2),
             subtraction: formatNumber(num1 - num2),
             multiplication: formatNumber(num1 * num2),
-            division: num2 !== 0 ? formatNumber(num1 / num2) : 'Nie dziel przez 0'
+            division: num2 !== 0 ? formatNumber(num1 / num2) : t("math.results.division_error"),
         };
     });
 </script>

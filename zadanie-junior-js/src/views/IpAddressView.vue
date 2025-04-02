@@ -21,7 +21,12 @@
     import { onMounted } from 'vue';
     import { ref } from 'vue';
     import { useI18n } from "vue-i18n";
+    import { useTitle } from '@vueuse/core';
+
     const { t } = useI18n();
+
+    const title = useTitle();
+    title.value = `Rekrutacja | ${t("nav.check_ip")}`;
 
     const ipAddress = ref(null);
     const error = ref(null);

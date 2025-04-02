@@ -5,6 +5,17 @@
         "calculator": "Kalkulator",
         "check_ip": "Sprawdź IP"
     },
+    "home": {
+        "title": "Kombotech - zadanie rekrutacyjne",
+        "functionality_title": "Funkcjonalności:",
+        "functionality": [
+            "wykonywanie obliczeń matematycznych (funkcja 1)",
+            "sprawdzanie adresuw IP (funkcja 2)",
+            "czytelny layout oparty o Vuetify i Tailwind",
+            "obsługa locales i zapisanie wartości w storage",
+            "tryb ciemny"
+        ]
+    },
     "math": {
         "title": "Obliczenia matematyczne",
         "varX": "Zmienna X",
@@ -14,7 +25,8 @@
             "addition": "Wynik dodawania",
             "subtraction": "Wynik odejmowania",
             "multiplication": "Wynik mnożenia",
-            "division": "Wynik dzielenia"
+            "division": "Wynik dzielenia",
+            "division_error": "Nie można dzielić przez zero"
         }
     },
     "ip": {

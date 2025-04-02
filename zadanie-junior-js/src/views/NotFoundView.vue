@@ -11,6 +11,10 @@
 
 <script setup>
     import { useRouter } from 'vue-router';
+    import { useTitle } from '@vueuse/core';
+
+    const title = useTitle();
+    title.value = 'Rekrutacja | Not found';
 
     const router = useRouter();
     const go_home = () => router.push("/");

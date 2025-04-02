@@ -5,6 +5,17 @@
         "calculator": "Calculator",
         "check_ip": "Check IP"
     },
+    "home": {
+        "title": "Kombotech - recruitment task",
+        "functionality_title": "Functionality:",
+        "functionality": [
+            "performing mathematical calculations (functionality 1)",
+            "checking IP address (functionality 2)",
+            "clear layout based on Vuetify and Tailwind",
+            "locale support and saved value in storage",
+            "dark mode"
+        ]
+    },
     "math": {
         "title": "Mathematical calculations",
         "varX": "Variable X",
@@ -14,7 +25,8 @@
             "addition": "Addition Result",
             "subtraction": "Subtraction Result",
             "multiplication": "Multiplication Result",
-            "division": "Division Result"
+            "division": "Division Result",
+            "division_error": "Division by zero is not allowed"
         }
     },
     "ip": {
